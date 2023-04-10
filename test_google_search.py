@@ -16,6 +16,6 @@ def test_coinciding_result(open_chrome_with_size):
     print(' тест успешно пройден - искомая фраза содержится в выдаче 1/2')
 
 def test_empty_result(open_chrome_with_size):
-    browser.element('[name="q"]').should(be.blank).type('flpagmdsgmkdspgmdsa').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('flpagdmdsgmkdspgmdsa').press_enter()
     browser.element('#result-stats').should(have.text('Результатов: примерно 0'))
     print(' тест успешно пройден - по запросу нет результатов в выдаче - 2/2')
